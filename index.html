@@ -20,6 +20,7 @@
   <link href="gwdmap_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-map">
   <link href="gwdvideo_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-video">
   <link href="gwdyoutube_style.css" rel="stylesheet" data-version="23" data-exports-type="gwd-youtube">
+  <link href="gwdiframe_style.css" rel="stylesheet" data-version="4" data-exports-type="gwd-iframe">
   <link href="index_motion_paths.css" rel="stylesheet" data-gwd-motion-path-style-sheet="">
   <style type="text/css" id="gwd-lightbox-style">
     .gwd-lightbox {
@@ -67,14 +68,14 @@
       height: 400px;
     }
     .gwd-div-15z4 {
-      height: 467px;
       width: 662px;
+      height: 583px;
     }
     .gwd-page-1qz8 {
       background-image: none;
       background-color: rgb(147, 206, 150);
-      height: 467px;
       width: 662px;
+      height: 583px;
     }
     .gwd-div-1d1u {
       position: absolute;
@@ -366,8 +367,8 @@
       position: absolute;
       width: 200px;
       height: 140px;
-      left: 95.3552px;
-      top: 320.117px;
+      left: 100px;
+      top: 264px;
     }
     .gwd-youtube-15nx {
       position: absolute;
@@ -375,6 +376,23 @@
       width: 30.21%;
       top: 67.24%;
       height: 29.98%;
+    }
+    .gwd-dateswap-1ymi {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 16.4375px;
+      top: 345.32px;
+      background-image: none;
+      background-color: rgb(216, 23, 23);
+    }
+    .gwd-iframe-c1v1 {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 78.906px;
+      top: 419px;
+      border: none;
     }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -393,12 +411,14 @@
   <script data-source="gwdmap_min.js" data-version="12" data-exports-type="gwd-map" src="gwdmap_min.js"></script>
   <script data-source="gwdvideo_min.js" data-version="12" data-exports-type="gwd-video" src="gwdvideo_min.js"></script>
   <script data-source="gwdyoutube_min.js" data-version="23" data-exports-type="gwd-youtube" src="gwdyoutube_min.js"></script>
+  <script data-source="gwddateswap_min.js" data-version="1" data-exports-type="gwd-dateswap" src="gwddateswap_min.js"></script>
+  <script data-source="gwdiframe_min.js" data-version="4" data-exports-type="gwd-iframe" src="gwdiframe_min.js"></script>
   <script type="text/javascript" src="motionpath_runtime.min.1.0.js" gwd-motionpath-version="1.0"></script>
 </head>
 
 <body class="document-body">
   <gwd-pagedeck class="gwd-page-container" id="pagedeck">
-    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1qz8" data-gwd-width="662px" data-gwd-height="467px" data-gwd-animation-labels="hello,1700">
+    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1qz8" data-gwd-width="662px" data-gwd-height="583px" data-gwd-animation-labels="hello,1700">
       <div class="gwd-page-content page1-content gwd-div-15z4">
         <div class="gwd-div-1d1u gwd-gen-1kncgwdanimation"></div>
         <div class="gwd-div-15yo gwd-gen-dr8lgwdanimation"></div>
@@ -419,6 +439,9 @@
         <gwd-video id="gwd-video_1" muted="" controls="" sources="" class="gwd-video-1lls"></gwd-video>
         <gwd-video id="gwd-video_2" muted="" controls="" sources="assets/20150912_071321.mp4" class="gwd-video-v9re"></gwd-video>
         <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=HMJYgF35D1I" annotations="" related="" title="" class="gwd-youtube-15nx" allowfullscreen=""></gwd-youtube>
+        <gwd-dateswap id="gwd-dateswap_1" from_date="1 Jan 2018 18:00:00" to_date="31 Dec 2018 18:00:00" class="gwd-dateswap-1ymi"></gwd-dateswap>
+        <gwd-iframe id="gwd-iframe_1" source="http://12dimperisteri.pbworks.com/w/page/104165275/12%CE%BF%20%CE%94%CE%B7%CE%BC%CE%BF%CF%84%CE%B9%CE%BA%CF%8C%20%CE%A3%CF%87%CE%BF%CE%BB%CE%B5%CE%AF%CE%BF%20%CE%A0%CE%B5%CF%81%CE%B9%CF%83%CF%84%CE%B5%CF%81%CE%AF%CE%BF%CF%85"
+        class="gwd-iframe-c1v1"></gwd-iframe>
       </div>
     </gwd-page>
   </gwd-pagedeck>
