@@ -9,6 +9,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="gwdpage_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-page">
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="11" data-exports-type="gwd-pagedeck">
+  <link href="gwdimage_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-image">
+  <link href="gwdgesture_style.css" rel="stylesheet" data-version="6" data-exports-type="gwd-gesture">
+  <link href="gwdgallerynavigation_style.css" rel="stylesheet" data-version="5" data-exports-type="gwd-gallerynavigation">
+  <link href="gwdcarouselgallery_style.css" rel="stylesheet" data-version="21" data-exports-type="gwd-carouselgallery">
+  <link href="gwd360gallery_style.css" rel="stylesheet" data-version="7" data-exports-type="gwd-360gallery">
+  <link href="gwdswipegallery_style.css" rel="stylesheet" data-version="23" data-exports-type="gwd-swipegallery">
+  <link href="gwdtaparea_style.css" rel="stylesheet" data-version="6" data-exports-type="gwd-taparea">
+  <link href="gwdaddtocalendar_style.css" rel="stylesheet" data-version="4" data-exports-type="gwd-addtocalendar">
+  <link href="gwdmap_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-map">
+  <link href="gwdvideo_style.css" rel="stylesheet" data-version="12" data-exports-type="gwd-video">
+  <link href="index_motion_paths.css" rel="stylesheet" data-gwd-motion-path-style-sheet="">
   <style type="text/css" id="gwd-lightbox-style">
     .gwd-lightbox {
       overflow: hidden;
@@ -55,12 +66,14 @@
       height: 400px;
     }
     .gwd-div-15z4 {
-      width: 100%;
-      height: 100%;
+      height: 467px;
+      width: 662px;
     }
     .gwd-page-1qz8 {
-      width: 100%;
-      height: 100%;
+      background-image: none;
+      background-color: rgb(147, 206, 150);
+      height: 467px;
+      width: 662px;
     }
     .gwd-div-1d1u {
       position: absolute;
@@ -71,6 +84,7 @@
       height: 48.52%;
       transform-style: preserve-3d;
       transform: translate3d(-637px, -6px, 0px);
+      opacity: 1;
     }
     .gwd-div-15yo {
       position: absolute;
@@ -106,26 +120,35 @@
       0% {
         transform: translate3d(-637px, -6px, 0px);
         background-color: rgb(139, 27, 27);
+        opacity: 1;
+        animation-timing-function: ease;
+      }
+      10% {
+        opacity: 0.5;
         animation-timing-function: ease;
       }
       25% {
         transform: translate3d(-12px, 30px, 0px);
         background-color: rgb(98, 153, 100);
+        opacity: 1;
         animation-timing-function: ease;
       }
       50% {
         transform: translate3d(-12px, 30px, 0px);
         background-color: rgb(29, 86, 44);
+        opacity: 1;
         animation-timing-function: linear;
       }
       75% {
         transform: translate3d(-12px, 30px, 0px);
         background-color: rgb(3, 60, 14);
+        opacity: 1;
         animation-timing-function: linear;
       }
       100% {
         transform: translate3d(-12px, 30px, 0px);
         background-color: rgb(0, 19, 4);
+        opacity: 1;
         animation-timing-function: linear;
       }
     }
@@ -187,6 +210,10 @@
         transform: translate3d(-717px, 215px, 0px);
         animation-timing-function: ease;
       }
+      10% {
+        transform: translate3d(-685.409px, 215px, 0px);
+        animation-timing-function: cubic-bezier(1, 0.17, 0, 0.56);
+      }
       25% {
         transform: translate3d(-610px, 215px, 0px);
         animation-timing-function: ease;
@@ -207,21 +234,181 @@
     #page1.gwd-play-animation .gwd-gen-1wu7gwdanimation {
       animation: gwd-gen-1wu7gwdanimation_gwd-keyframes 2s linear 0s 1 normal forwards;
     }
+    .gwd-image-tdrg {
+      position: absolute;
+      width: 278px;
+      height: 297px;
+      transform-origin: 139px 148.675px 0px;
+      left: 212px;
+      top: 17px;
+      opacity: 0;
+      transform-style: preserve-3d;
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+    }
+    @keyframes gwd-gen-18ptgwdanimation_gwd-keyframes {
+      0% {
+        opacity: 0;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+        animation-timing-function: linear;
+      }
+      94.44% {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+        animation-timing-function: linear;
+      }
+      100% {
+        opacity: 1;
+        transform: translate3d(71px, -96px, 0px) scale3d(0.491379, 0.351627, 1);
+        animation-timing-function: linear;
+      }
+    }
+    #page1.gwd-play-animation .gwd-gen-18ptgwdanimation {
+      animation: gwd-gen-18ptgwdanimation_gwd-keyframes 1.8s linear 0s 1 normal forwards;
+    }
+    .gwd-image-fj4m {
+      position: absolute;
+      width: 159px;
+      height: 72px;
+      transform-origin: 79.6349px 36.1052px 0px;
+      left: 30px;
+      top: 198px;
+      transform-style: preserve-3d;
+      transform: translate3d(0px, 0px, 0px);
+      pointer-events: auto;
+    }
+    #page1.gwd-play-animation .gwd-gen-ids9gwdanimation {
+      animation: gwd-gen-ids9gwdanimation_gwd-keyframes 1.5s linear 0s 1 normal forwards;
+    }
+    .gwd-carouselgallery-yri5 {
+      position: absolute;
+      transform-origin: 172.105px 69.9963px 0px;
+      transform-style: preserve-3d;
+      left: -6.93%;
+      width: 62.96%;
+      top: 76.93%;
+      height: 41.42%;
+      transform: translate3d(309px, -187px, 0px) rotateZ(-18.5499deg);
+    }
+    .gwd-360gallery-esjb {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      top: 20px;
+      left: 136px;
+      transform-style: preserve-3d;
+      transform: translate3d(-69px, -5px, 0px) rotateZ(-4.6727deg);
+      border-style: dotted;
+    }
+    .gwd-gallerynavigation-k0ca {
+      position: absolute;
+      left: 47.08%;
+      width: 36.5%;
+      top: 54.44%;
+      height: 14.79%;
+    }
+    .gwd-swipegallery-1pqj {
+      position: absolute;
+      left: 62.41%;
+      width: 36.5%;
+      top: 11.54%;
+      height: 41.42%;
+    }
+    .gwd-addtocalendar-7gkh {
+      position: absolute;
+      width: 36.5%;
+      height: 11.83%;
+      left: 3%;
+      top: 25%;
+      background-image: none;
+      background-color: rgb(218, 12, 12);
+    }
+    .gwd-gesture-y65a {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 200px;
+      top: 39px;
+      background-image: none;
+      background-color: rgb(239, 248, 7);
+    }
+    .gwd-imagebutton-1c2a {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 132.906px;
+      top: 174px;
+    }
+    .gwd-taparea-1ehr {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 16.4375px;
+      top: 70px;
+      background-image: none;
+      background-color: rgb(44, 5, 160);
+    }
+    .gwd-map-1muf {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 80px;
+      top: 84.5px;
+    }
+    .gwd-video-1lls {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 150px;
+      top: 109px;
+    }
+    .gwd-video-v9re {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 95.3552px;
+      top: 320.117px;
+    }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
   <script data-source="gwd_webcomponents_min.js" data-version="5" data-exports-type="gwd_webcomponents" src="gwd_webcomponents_min.js"></script>
   <script data-source="gwdpage_min.js" data-version="12" data-exports-type="gwd-page" src="gwdpage_min.js"></script>
   <script data-source="gwdpagedeck_min.js" data-version="11" data-exports-type="gwd-pagedeck" src="gwdpagedeck_min.js"></script>
+  <script data-source="gwdimage_min.js" data-version="12" data-exports-type="gwd-image" src="gwdimage_min.js"></script>
+  <script data-source="gwdgesture_min.js" data-version="6" data-exports-type="gwd-gesture" src="gwdgesture_min.js"></script>
+  <script data-source="gwdgallerynavigation_min.js" data-version="5" data-exports-type="gwd-gallerynavigation" src="gwdgallerynavigation_min.js"></script>
+  <script data-source="gwdcarouselgallery_min.js" data-version="21" data-exports-type="gwd-carouselgallery" src="gwdcarouselgallery_min.js"></script>
+  <script data-source="gwd360gallery_min.js" data-version="7" data-exports-type="gwd-360gallery" src="gwd360gallery_min.js"></script>
+  <script data-source="gwdswipegallery_min.js" data-version="23" data-exports-type="gwd-swipegallery" src="gwdswipegallery_min.js"></script>
+  <script data-source="gwdtaparea_min.js" data-version="6" data-exports-type="gwd-taparea" src="gwdtaparea_min.js"></script>
+  <script data-source="gwdaddtocalendar_min.js" data-version="4" data-exports-type="gwd-addtocalendar" src="gwdaddtocalendar_min.js"></script>
+  <script data-source="gwdimagebutton_min.js" data-version="10" data-exports-type="gwd-imagebutton" src="gwdimagebutton_min.js"></script>
+  <script data-source="gwdmap_min.js" data-version="12" data-exports-type="gwd-map" src="gwdmap_min.js"></script>
+  <script data-source="gwdvideo_min.js" data-version="12" data-exports-type="gwd-video" src="gwdvideo_min.js"></script>
+  <script type="text/javascript" src="motionpath_runtime.min.1.0.js" gwd-motionpath-version="1.0"></script>
 </head>
 
 <body class="document-body">
   <gwd-pagedeck class="gwd-page-container" id="pagedeck">
-    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1qz8" data-gwd-width="100%" data-gwd-height="100%">
+    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1qz8" data-gwd-width="662px" data-gwd-height="467px" data-gwd-animation-labels="hello,1700">
       <div class="gwd-page-content page1-content gwd-div-15z4">
         <div class="gwd-div-1d1u gwd-gen-1kncgwdanimation"></div>
         <div class="gwd-div-15yo gwd-gen-dr8lgwdanimation"></div>
         <div class="gwd-div-6jet gwd-gen-1k2kgwdanimation"></div>
         <div class="gwd-div-699q gwd-gen-1wu7gwdanimation"></div>
+        <gwd-image id="gwd-image_1" source="assets/pi5.jpg" scaling="stretch" class="gwd-image-tdrg gwd-gen-18ptgwdanimation"></gwd-image>
+        <gwd-image id="gwd-image_2" source="assets/nicubunu-Toy-car.svg" scaling="stretch" class="gwd-image-fj4m gwd-gen-ids9gwdanimation" data-gwd-motion-path-key="gwd-motion-path-1b4i" data-gwd-has-tangent-following=""></gwd-image>
+        <gwd-carouselgallery id="gwd-carouselgallery_1" scaling="contain" pause-front-media="" resume-next-media="" class="gwd-carouselgallery-yri5" data-gwd-name="my-car" images="assets/pi5.jpg,assets/bf.jpg" autoplay="" has-navigation="" navigation-thumbnails=""
+        start-frame="1" transition-duration="182" neighbor-rotation-y="51" show-reflection="" frame-width="500" frame-height="500"></gwd-carouselgallery>
+        <gwd-360gallery id="gwd-360gallery_1" class="gwd-360gallery-esjb" images="assets/pi5.jpg,assets/bf.jpg" autoplay="" wrap=""></gwd-360gallery>
+        <gwd-gallerynavigation id="gwd-gallerynavigation_1" class="gwd-gallerynavigation-k0ca" for="gwd-360gallery_1" data-gwd-name="mynav" use-thumbnails=""></gwd-gallerynavigation>
+        <gwd-swipegallery id="gwd-swipegallery_1" scaling="contain" pause-front-media="" resume-next-media="" class="gwd-swipegallery-1pqj" images="assets/pappy.svg,assets/logo-MK.svg,assets/cta.svg" autoplay="" has-navigation="" navigation-thumbnails=""></gwd-swipegallery>
+        <gwd-addtocalendar id="gwd-addtocalendar_1" event-title="Event title" start-date="2018/08/27 " icalendar="" google="" windows-live="" yahoo="" class="gwd-addtocalendar-7gkh" data-gwd-name="test" start-time="11:00" end-date="08/27/2018" end-time="11:30"></gwd-addtocalendar>
+        <gwd-gesture id="gwd-gesture_1" class="gwd-gesture-y65a" touch-action="pan-x"></gwd-gesture>
+        <gwd-imagebutton id="gwd-imagebutton_1" up-image="" over-image="assets/bf.jpg" down-image="assets/logo-MK.svg" scaling="contain" class="gwd-imagebutton-1c2a" bgcolor="#00078"></gwd-imagebutton>
+        <gwd-taparea id="gwd-taparea_1" class="gwd-taparea-1ehr"></gwd-taparea>
+        <gwd-map id="gwd-map_1" query="" start-latitude="" start-longitude="" class="gwd-map-1muf"></gwd-map>
+        <gwd-video id="gwd-video_1" muted="" controls="" sources="" class="gwd-video-1lls"></gwd-video>
+        <gwd-video id="gwd-video_2" muted="" controls="" sources="assets/20150912_071321.mp4" class="gwd-video-v9re"></gwd-video>
       </div>
     </gwd-page>
   </gwd-pagedeck>
