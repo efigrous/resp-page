@@ -69,13 +69,13 @@
     }
     .gwd-div-15z4 {
       width: 662px;
-      height: 583px;
+      height: 946px;
     }
     .gwd-page-1qz8 {
       background-image: none;
       background-color: rgb(147, 206, 150);
       width: 662px;
-      height: 583px;
+      height: 946px;
     }
     .gwd-div-1d1u {
       position: absolute;
@@ -133,6 +133,10 @@
         transform: translate3d(-12px, 30px, 0px);
         background-color: rgb(98, 153, 100);
         opacity: 1;
+        animation-timing-function: ease;
+      }
+      30% {
+        transform: translate3d(-10px, 14px, 0px);
         animation-timing-function: ease;
       }
       50% {
@@ -193,6 +197,10 @@
       }
       50% {
         transform: translate3d(-404px, 104px, 0px);
+        animation-timing-function: linear;
+      }
+      65% {
+        transform: translate3d(-207px, -53px, 0px);
         animation-timing-function: linear;
       }
       75% {
@@ -289,7 +297,7 @@
       width: 62.96%;
       top: 76.93%;
       height: 41.42%;
-      transform: translate3d(309px, -187px, 0px) rotateZ(-18.5499deg);
+      transform: translate3d(512px, -408px, 0px) rotateZ(-18.5499deg);
     }
     .gwd-360gallery-esjb {
       position: absolute;
@@ -353,29 +361,29 @@
       position: absolute;
       width: 200px;
       height: 140px;
-      left: 80px;
-      top: 84.5px;
+      left: 354px;
+      top: 104px;
     }
     .gwd-video-1lls {
       position: absolute;
       width: 200px;
       height: 140px;
-      left: 150px;
-      top: 109px;
+      left: 253px;
+      top: 261px;
     }
     .gwd-video-v9re {
       position: absolute;
       width: 200px;
       height: 140px;
-      left: 100px;
-      top: 264px;
+      left: 45.32%;
+      top: 85.41%;
     }
     .gwd-youtube-15nx {
       position: absolute;
-      left: 55.73%;
       width: 30.21%;
-      top: 67.24%;
       height: 29.98%;
+      left: 68%;
+      top: 52%;
     }
     .gwd-dateswap-1ymi {
       position: absolute;
@@ -390,9 +398,60 @@
       position: absolute;
       width: 200px;
       height: 140px;
-      left: 78.906px;
-      top: 419px;
       border: none;
+      background-image: none;
+      background-color: rgb(232, 14, 14);
+      left: 13%;
+      top: 58%;
+    }
+    .gwd-spritesheet-1uiq {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 46px;
+      top: 549px;
+    }
+    .gwd-carouselgallery-oqrh {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      background-image: none;
+      background-color: rgb(230, 14, 165);
+      left: 58%;
+      top: 63%;
+    }
+    .gwd-div-1gr8 {
+      position: absolute;
+      width: 180.18px;
+      height: 24px;
+      background-image: none;
+      background-color: rgb(12, 22, 162);
+      left: 261px;
+      top: 780px;
+    }
+    .gwd-swipegallery-herl {
+      position: absolute;
+      width: 200px;
+      height: 140px;
+      left: 10.04%;
+      top: 77.98%;
+    }
+    .gwd-page-1m5v {
+      width: 662px;
+      height: 946px;
+    }
+    .gwd-div-1sss {
+      width: 662px;
+      height: 946px;
+    }
+    .gwd-div-1nnq {
+      position: absolute;
+      width: 320px;
+      height: 175px;
+      left: 130px;
+      top: 45px;
+      background-image: none;
+      background-color: rgb(218, 7, 7);
     }
   </style>
   <script data-source="googbase_min.js" data-version="4" data-exports-type="googbase" src="googbase_min.js"></script>
@@ -413,12 +472,62 @@
   <script data-source="gwdyoutube_min.js" data-version="23" data-exports-type="gwd-youtube" src="gwdyoutube_min.js"></script>
   <script data-source="gwddateswap_min.js" data-version="1" data-exports-type="gwd-dateswap" src="gwddateswap_min.js"></script>
   <script data-source="gwdiframe_min.js" data-version="4" data-exports-type="gwd-iframe" src="gwdiframe_min.js"></script>
+  <script data-source="gwdspritesheet_min.js" data-version="10" data-exports-type="gwd-spritesheet" src="gwdspritesheet_min.js"></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    window.gwd = window.gwd || {};
+    gwd.test = function(event) {
+      alert(' i love google web designer');
+    };
+    gwd.gallery = function(event) {
+      var gallery = document.getElementById('gwd-swipegallery_2');
+      var div = document.getElementById('mydiv');
+      var text = {
+        1: "The text for frame 1",
+        2: "The text for frame 2",
+        3: "The text for frame 3"
+      };
+      div.textContent = text[gallery.currentIndex];
+    };
+    gwd.video2 = function(event) {
+      if (document.getElementById('gwd-video_2').muted) {
+        alert('hello');
+        document.getElementById('gwd-video_2').mute();
+      }
+    };
+    gwd.pagetest = function(event) {
+      setTimeout(nextPage, 2);
+
+      function nextPage() {
+        alert('hello');
+        document.getElementById('pagedeck').goToNextPage();
+      }
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">
+    // Support code for event handling in Google Web Designer
+     // This script block is auto-generated. Please do not edit!
+    gwd.actions.events.registerEventHandlers = function(event) {
+      gwd.actions.events.addHandler('gwd-carouselgallery_2', 'click', gwd.test, false);
+      gwd.actions.events.addHandler('gwd-swipegallery_2', 'frameshown', gwd.gallery, false);
+      gwd.actions.events.addHandler('gwd-video_2', 'play', gwd.video2, false);
+      gwd.actions.events.addHandler('page1', 'pagepresenting', gwd.pagetest, false);
+    };
+    gwd.actions.events.deregisterEventHandlers = function(event) {
+      gwd.actions.events.removeHandler('gwd-carouselgallery_2', 'click', gwd.test, false);
+      gwd.actions.events.removeHandler('gwd-swipegallery_2', 'frameshown', gwd.gallery, false);
+      gwd.actions.events.removeHandler('gwd-video_2', 'play', gwd.video2, false);
+      gwd.actions.events.removeHandler('page1', 'pagepresenting', gwd.pagetest, false);
+    };
+    document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
+    document.addEventListener("unload", gwd.actions.events.deregisterEventHandlers);
+  </script>
   <script type="text/javascript" src="motionpath_runtime.min.1.0.js" gwd-motionpath-version="1.0"></script>
 </head>
 
 <body class="document-body">
   <gwd-pagedeck class="gwd-page-container" id="pagedeck">
-    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1qz8" data-gwd-width="662px" data-gwd-height="583px" data-gwd-animation-labels="hello,1700">
+    <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1qz8" data-gwd-width="662px" data-gwd-height="946px" data-gwd-animation-labels="hello,1700">
       <div class="gwd-page-content page1-content gwd-div-15z4">
         <div class="gwd-div-1d1u gwd-gen-1kncgwdanimation"></div>
         <div class="gwd-div-15yo gwd-gen-dr8lgwdanimation"></div>
@@ -440,8 +549,16 @@
         <gwd-video id="gwd-video_2" muted="" controls="" sources="assets/20150912_071321.mp4" class="gwd-video-v9re"></gwd-video>
         <gwd-youtube id="gwd-youtube_1" video-url="https://www.youtube.com/watch?v=HMJYgF35D1I" annotations="" related="" title="" class="gwd-youtube-15nx" allowfullscreen=""></gwd-youtube>
         <gwd-dateswap id="gwd-dateswap_1" from_date="1 Jan 2018 18:00:00" to_date="31 Dec 2018 18:00:00" class="gwd-dateswap-1ymi"></gwd-dateswap>
-        <gwd-iframe id="gwd-iframe_1" source="http://12dimperisteri.pbworks.com/w/page/104165275/12%CE%BF%20%CE%94%CE%B7%CE%BC%CE%BF%CF%84%CE%B9%CE%BA%CF%8C%20%CE%A3%CF%87%CE%BF%CE%BB%CE%B5%CE%AF%CE%BF%20%CE%A0%CE%B5%CF%81%CE%B9%CF%83%CF%84%CE%B5%CF%81%CE%AF%CE%BF%CF%85"
-        class="gwd-iframe-c1v1"></gwd-iframe>
+        <gwd-iframe id="gwd-iframe_1" source="https://www.google.gr/" class="gwd-iframe-c1v1" data-gwd-name="test"></gwd-iframe>
+        <gwd-spritesheet id="gwd-spritesheet_1" imagesource="assets/metulja-okoli-roze.gif" offsetx="0" offsety="0" clipwidth="64" clipheight="64" scaling="cover" class="gwd-spritesheet-1uiq" src="assets/metulja-okoli-roze.gif" totalframecount="33" autoplay=""></gwd-spritesheet>
+        <gwd-carouselgallery id="gwd-carouselgallery_2" scaling="contain" pause-front-media="" resume-next-media="" class="gwd-carouselgallery-oqrh" navigation-highlight="rgba(209,17,186,1)"></gwd-carouselgallery>
+        <div class="gwd-div-1gr8" id="mydiv"></div>
+        <gwd-swipegallery id="gwd-swipegallery_2" scaling="contain" pause-front-media="" resume-next-media="" class="gwd-swipegallery-herl" images="assets/cta.svg,assets/bf.jpg,assets/pi5.jpg"></gwd-swipegallery>
+      </div>
+    </gwd-page>
+    <gwd-page id="page1_1" class="gwd-page-wrapper gwd-lightbox gwd-page-1m5v" data-gwd-width="662px" data-gwd-height="946px" data-gwd-name="page2">
+      <div class="gwd-page-content gwd-div-1sss">
+        <div class="gwd-div-1nnq"></div>
       </div>
     </gwd-page>
   </gwd-pagedeck>
